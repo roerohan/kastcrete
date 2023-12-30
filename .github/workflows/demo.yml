@@ -3,7 +3,8 @@ name: Deploy to github.io
 on:
   push:
     branches: [main]
-
+permissions:
+  contents: write
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -14,7 +15,7 @@ jobs:
           node-version: 20
           registry-url: https://registry.npmjs.org/
 
-      - name: npm install, lint
+      - name: npm install
         run: |
           npm install
           npm run build
