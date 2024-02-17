@@ -15,6 +15,10 @@ jobs:
           node-version: 20
           registry-url: https://registry.npmjs.org/
 
+      - name: Set environment variables
+        run: |
+          echo "REPOSITORY_NAME=${basename `pwd`} >> $GITHUB_ENV"
+
       - name: npm install
         run: |
           npm install

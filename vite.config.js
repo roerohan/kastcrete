@@ -9,4 +9,5 @@ export default defineConfig({
   build: {
     outDir: "../dist",
   },
+  base: process.env.CI ? process.env.REPOSITORY_NAME : '',
 });
