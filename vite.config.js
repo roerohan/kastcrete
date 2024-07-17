@@ -14,6 +14,8 @@ export default defineConfig({
         about_us: resolve(__dirname, 'src', 'about_us.html'),
         arrah_gardens: resolve(__dirname, 'src', 'arrah_gardens.html'),
         avkash_residences: resolve(__dirname, 'src', 'avkash_residences.html'),
+        '12_arrah_gardens': resolve(__dirname, 'src', '12_arrah_gardens.html'),
+        krishna_savitri_gardens: resolve(__dirname, 'src', 'krishna_savitri_gardens.html'),
       }
     },
     outDir: "../dist",
